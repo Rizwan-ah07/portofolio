@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Rizwan Hussain's Personal Portfolio">
+    <meta name="keywords" content="Rizwan Hussain, Portfolio, Web Developer, Full Stack Developer">
+    <meta name="author" content="Rizwan Hussain">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizwan Hussain | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <section class="container">
+            <h1 class="logo"><a href="#hero">Rizwan Hussain</a></h1>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <section class="hero-content">
+            <h1>Hi, I'm <span>Rizwan Hussain</span></h1>
+            <p>A Full Stack Developer in the Making.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </section>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <article class="container">
+            <header>
+                <h2>About Me</h2>
+            </header>
+            <p>I'm a passionate full-stack developer with a knack for creating dynamic and responsive web applications. With a strong foundation in HTML, CSS, JavaScript, and a keen eye for design, I aim to build user-centric solutions that not only look good but also provide an excellent user experience.</p>
+            <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+        </article>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <article class="container">
+            <header>
+                <h2>Skills</h2>
+            </header>
+            <ul class="skills-grid">
+                <!-- Skill Item -->
+                <li class="skill">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <h3>HTML5</h3>
+                    <p>Experienced</p>
+                </li>
+                <!-- Skill Item -->
+                <li class="skill">
+                    <i class="fab fa-css3-alt fa-3x"></i>
+                    <h3>CSS3</h3>
+                    <p>Proficient</p>
+                </li>
+                <!-- Skill Item -->
+                <li class="skill">
+                    <i class="fab fa-js-square fa-3x"></i>
+                    <h3>JavaScript</h3>
+                    <p>Proficient</p>
+                </li>
+                <!-- Skill Item -->
+                <li class="skill">
+                    <i class="fab fa-react fa-3x"></i>
+                    <h3>React</h3>
+                    <p>Intermediate</p>
+                </li>
+                <!-- Skill Item -->
+                <li class="skill">
+                    <i class="fab fa-node fa-3x"></i>
+                    <h3>Node.js</h3>
+                    <p>Intermediate</p>
+                </li>
+                <!-- Skill Item -->
+                <li class="skill">
+                    <i class="fas fa-database fa-3x"></i>
+                    <h3>MongoDB</h3>
+                    <p>Intermediate</p>
+                </li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </article>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <article class="container">
+            <header>
+                <h2>My Projects</h2>
+            </header>
+            <ul class="projects-grid">
+                <!-- Project Card -->
+                <li class="project-card">
+                    <figure>
+                        <img src="project1.jpg" alt="Project 1">
+                        <figcaption>
+                            <h3>Electron App</h3>
+                            <p>A desktop application built with Electron that...</p>
+                            <a href="#" class="btn" target="_blank">GitHub Repo</a>
+                            <a href="#" class="btn" target="_blank">Live Demo</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!-- Project Card -->
+                <li class="project-card">
+                    <figure>
+                        <img src="project2.jpg" alt="Project 2">
+                        <figcaption>
+                            <h3>Portfolio Website</h3>
+                            <p>An elegant and responsive personal portfolio website...</p>
+                            <a href="#" class="btn" target="_blank">GitHub Repo</a>
+                            <a href="#" class="btn" target="_blank">Live Demo</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!-- Add more project cards as needed -->
+            </ul>
+        </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <article class="container">
+            <header>
+                <h2>Contact Me</h2>
+            </header>
+            <form id="contact-form">
+                <label for="name"><i class="fas fa-user"></i> Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message"><i class="fas fa-comment"></i> Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <section class="container">
+            <p>© 2024 Rizwan Hussain. All rights reserved.</p>
+            <nav class="social-links">
+                <a href="https://github.com/Rizwan-ah07" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/rizwan-hussain-768973226/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <!-- Add more social icons as needed -->
+            </nav>
+        </section>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#hero" class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
