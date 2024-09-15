@@ -461,3 +461,156 @@ footer p {
         height: 150px;
     }
 }
+
+/* Default Light Mode */
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --primary-color: #6a0dad;
+    --accent-color: #009688;
+    --button-bg-color: #6a0dad;
+    --button-text-color: white;
+}
+
+/* Dark Mode Variables */
+.dark-mode {
+    --background-color: #1e1f26;
+    --text-color: #f4f4f4;
+    --primary-color: #8a2be2;
+    --accent-color: #48d1cc;
+    --button-bg-color: #8a2be2;
+    --button-text-color: white;
+}
+
+/* Apply background and text colors globally */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Update button colors */
+.hero-content .btn {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+}
+
+/* Additional styles to manage the toggle button */
+.theme-toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.theme-toggle-btn:hover {
+    color: var(--primary-color);
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    border-radius: 34px;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    background-color: white;
+    border-radius: 50%;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Switch styles to have a round shape */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.theme-switch-wrapper em {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+#navbar {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    color: #333; /* Dark text for visibility */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for better contrast */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navbar .nav-links li a {
+    color: #333; /* Dark text color for light mode */
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#navbar .nav-links li a:hover {
+    color: var(--primary-color); /* Hover color */
+}
+
+/* Dark Mode (Navbar) */
+.dark-mode #navbar {
+    background-color: rgba(30, 31, 38, 0.9); /* Dark background */
+    color: #f4f4f4; /* Light text for dark mode */
+    box-shadow: none; /* Remove shadow for a clean look */
+}
+
+.dark-mode #navbar .nav-links li a {
+    color: #f4f4f4; /* Light text color in dark mode */
+}
+
+.dark-mode #navbar .nav-links li a:hover {
+    color: var(--accent-color); /* Hover color for dark mode */
+}

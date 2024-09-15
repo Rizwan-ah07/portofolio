@@ -53,7 +53,6 @@ const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', e => {
     e.preventDefault();
-    // Simple form validation
     const name = contactForm.name.value.trim();
     const email = contactForm.email.value.trim();
     const message = contactForm.message.value.trim();
@@ -61,8 +60,25 @@ contactForm.addEventListener('submit', e => {
     if (name === '' || email === '' || message === '') {
         alert('Please fill in all fields.');
     } else {
-        // Here you can add code to submit the form data to your email or server
+
         alert('Thank you for your message!');
         contactForm.reset();
     }
+});
+
+
+const themeSwitch = document.getElementById('checkbox');
+const savedTheme = localStorage.getItem('theme');
+
+if (savedTheme) {
+    document.body.classList.toggle('dark-mode', savedTheme === 'dark');
+    themeSwitch.checked = savedTheme === 'dark'; 
+}
+
+themeSwitch.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+    
+
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
 });
