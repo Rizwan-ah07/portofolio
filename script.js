@@ -66,19 +66,27 @@ contactForm.addEventListener('submit', e => {
     }
 });
 
+// Dark Mode Toggle
+const themeToggle = document.getElementById('theme-toggle');
+const currentTheme = localStorage.getItem('theme');
 
-const themeSwitch = document.getElementById('checkbox');
-const savedTheme = localStorage.getItem('theme');
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
 
-if (savedTheme) {
-    document.body.classList.toggle('dark-mode', savedTheme === 'dark');
-    themeSwitch.checked = savedTheme === 'dark'; 
+    if (currentTheme === 'dark') {
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
 }
 
-themeSwitch.addEventListener('change', () => {
-    document.body.classList.toggle('dark-mode');
-    
-
-    const isDarkMode = document.body.classList.contains('dark-mode');
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+themeToggle.addEventListener('click', function () {
+    let theme = document.documentElement.getAttribute('data-theme');
+    if (theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
 });
