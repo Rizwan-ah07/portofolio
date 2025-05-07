@@ -1,189 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="description" content="Rizwan Hussain's Personal Portfolio">
-    <meta name="keywords" content="Rizwan Hussain, Portfolio, Web Developer, Full Stack Developer">
-    <meta name="author" content="Rizwan Hussain">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rizwan Hussain | Portfolio</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-
-    <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Rizwan Hussain, 21, Graduaat Programmeren student at AP Hogeschool">
+  <title>Rizwan Hussain | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css" />
+  <style>
+
+  </style>
 </head>
 <body>
-
-    <!-- Navigation -->
-    <nav id="navbar">
-        <section class="container">
-            <h1 class="logo"><a href="#hero">Rizwan Hussain</a></h1>
-            <button class="hamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <!-- Theme Toggle Button -->
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
-                <i class="fas fa-moon"></i>
-            </button>
-        </section>
-    </nav>
-
-    <!-- Hero Section -->
-    <header id="hero">
-        <section class="hero-content">
-            <h1>Hi, I'm <span>Rizwan Hussain</span></h1>
-            <p>A Full Stack Developer in the Making.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </section>
-    
-    </header>
-
-    <!-- About Section -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">Rizwan <span>Hussain</span></div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#additional">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="hero">
+      <article class="hero-text">
+        <h1>Hello, I’m <span class="accent">Rizwan</span></h1>
+        <ul>
+          <li>Graduaat Programmeren student @ AP Hogeschool</li>
+          <li>Building robust apps with C# & OOP</li>
+          <li>Crafting web interfaces with HTML, CSS, JS, TS</li>
+        </ul>
+        <a href="#projects" class="cta">See My Work</a>
+      </article>
+      <figure class="hero-image">
+        <img src="assets/images/Rizwan.png" alt="Rizwan Hussain">
+      </figure>
+    </section>
     <section id="about">
-        <article class="container">
-            <header>
-                <h2>About Me</h2>
-            </header>
-            <p>I'm a passionate full-stack developer with a knack for creating dynamic and responsive web applications. With a strong foundation in HTML, CSS, JavaScript, and a keen eye for design, I aim to build user-centric solutions that not only look good but also provide an excellent user experience.</p>
-            <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
-        </article>
+      <h2>About Me</h2>
+      <p>As a 21-year-old Graduaat Programmeren student, I'm proficient in C#, OOP, HTML, CSS, JavaScript, TypeScript, MongoDB, and MySQL. Next year, I will dive into React to create dynamic user interfaces.</p>
+      <a href="Rizwan-cv.pdf" download id="cv-btn" aria-label="Download CV"><i class="fas fa-file-pdf"></i> Download CV</a>
     </section>
-
-    <!-- Skills Section -->
     <section id="skills">
-        <article class="container">
-            <header>
-                <h2>Skills</h2>
-            </header>
-            <ul class="skills-grid">
-                <!-- Skill Item -->
-                <li class="skill">
-                    <i class="fab fa-html5 fa-3x"></i>
-                    <h3>HTML5</h3>
-                    <p>Experienced</p>
-                </li>
-                <!-- Skill Item -->
-                <li class="skill">
-                    <i class="fab fa-css3-alt fa-3x"></i>
-                    <h3>CSS3</h3>
-                    <p>Proficient</p>
-                </li>
-                <!-- Skill Item -->
-                <li class="skill">
-                    <i class="fab fa-js-square fa-3x"></i>
-                    <h3>JavaScript</h3>
-                    <p>Proficient</p>
-                </li>
-                <!-- Skill Item -->
-                <li class="skill">
-                    <i class="fab fa-react fa-3x"></i>
-                    <h3>React</h3>
-                    <p>Intermediate</p>
-                </li>
-                <!-- Skill Item -->
-                <li class="skill">
-                    <i class="fab fa-node fa-3x"></i>
-                    <h3>Node.js</h3>
-                    <p>Intermediate</p>
-                </li>
-                <!-- Skill Item -->
-                <li class="skill">
-                    <i class="fas fa-database fa-3x"></i>
-                    <h3>MongoDB</h3>
-                    <p>Intermediate</p>
-                </li>
-                <!-- Add more skills as needed -->
-            </ul>
-        </article>
+      <h3 class="subsection">Technical Skills</h3>
+      <ul class="skills-grid">
+        <li class="skill-card"><i class="devicon-csharp-plain"></i><span>C#</span></li>
+        <li class="skill-card"><i class="devicon-csharp-plain"></i><span>OOP</span></li>
+        <li class="skill-card"><i class="devicon-html5-plain"></i><span>HTML5</span></li>
+        <li class="skill-card"><i class="devicon-css3-plain"></i><span>CSS3</span></li>
+        <li class="skill-card"><i class="devicon-javascript-plain"></i><span>JavaScript</span></li>
+        <li class="skill-card"><i class="devicon-typescript-plain"></i><span>TypeScript</span></li>
+        <li class="skill-card"><i class="devicon-mongodb-plain"></i><span>MongoDB</span></li>
+        <li class="skill-card"><i class="devicon-mysql-plain"></i><span>MySQL</span></li>
+        <li class="skill-card"><i class="devicon-git-plain"></i><span>Git</span></li>
+        <li class="skill-card"><i class="fas fa-bug"></i><span>Debugging</span></li>
+      </ul>
+      <h3 class="subsection">Soft Skills</h3>
+      <ul class="skills-grid">
+        <li class="skill-card"><i class="fas fa-users"></i><span>Teamwork</span></li>
+        <li class="skill-card"><i class="fas fa-comments"></i><span>Communication</span></li>
+        <li class="skill-card"><i class="fas fa-lightbulb"></i><span>Problem Solving</span></li>
+        <li class="skill-card"><i class="fas fa-user-tie"></i><span>Leadership</span></li>
+        <li class="skill-card"><i class="fas fa-sync-alt"></i><span>Adaptability</span></li>
+        <li class="skill-card"><i class="fas fa-clock"></i><span>Time Management</span></li>
+        <li class="skill-card"><i class="fas fa-brain"></i><span>Critical Thinking</span></li>
+      </ul>
     </section>
-
-    <!-- Projects Section -->
     <section id="projects">
-        <article class="container">
-            <header>
-                <h2>My Projects</h2>
-            </header>
-            <ul class="projects-grid">
-                <!-- Project Card -->
-                <li class="project-card">
-                    <figure>
-                        <img src="project1.jpg" alt="Project 1">
-                        <figcaption>
-                            <h3>Electron App</h3>
-                            <p>A desktop application built with Electron that...</p>
-                            <a href="#" class="btn" target="_blank">GitHub Repo</a>
-                            <a href="#" class="btn" target="_blank">Live Demo</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <!-- Project Card -->
-                <li class="project-card">
-                    <figure>
-                        <img src="project2.jpg" alt="Project 2">
-                        <figcaption>
-                            <h3>Portfolio Website</h3>
-                            <p>An elegant and responsive personal portfolio website...</p>
-                            <a href="#" class="btn" target="_blank">GitHub Repo</a>
-                            <a href="#" class="btn" target="_blank">Live Demo</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <!-- Add more project cards as needed -->
-            </ul>
-        </article>
+        <h2>Projects</h2>
+        <ul class="projects-list">
+          <li>
+            <article class="project-card">
+              <figure>
+                <img src="assets/images/pokemon-web-app.png" alt="Screenshot of Pokémon Game Website">
+              </figure>
+              <div class="project-info">
+                <h3>Pokémon Game Website</h3>
+                <p>
+                  A full-featured game portal built with HTML, CSS, and JavaScript, leveraging the public PokeAPI. 
+                  Features include per-user Pokémon capture with nicknaming, stat comparison with green +/red – indicators, 
+                  a three-attempt catch algorithm, a “Who’s that Pokémon?” quiz with autocomplete, and a turn-based Pokémon battler 
+                  that automatically captures defeated Pokémon.
+                </p>
+                <nav class="project-links">
+                  <a href="https://tripleharmony.onrender.com/" target="_blank" class="btn">View Live Site</a>
+                </nav>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project-card">
+              <figure>
+                <img src="assets/images/perfume-shop.png" alt="Screenshot of Perfume Webshop">
+              </figure>
+              <div class="project-info">
+                <h3>Perfume Webshop</h3>
+                <p>
+                  A responsive e-commerce demo showcasing 12 perfumes, built with HTML5, CSS3, and JavaScript. 
+                  Includes product listing and detail pages with shopping cart, reviews, and wishlist functionality, 
+                  plus a contact page featuring a Leaflet map and dropdown inquiry form, all optimized for desktop and mobile.
+                </p>
+                <nav class="project-links">
+                  <a href="https://admirable-halva-4133c0.netlify.app/" target="_blank" class="btn">View Live Site</a>
+                </nav>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    <section id="additional">
+      <h2>Additional Experience</h2>
+      <p>In my free time, I've mastered file transfer and management within virtual machines, implemented secure OAuth workflows to automate email notifications for user registration and password recovery, and built cross-platform desktop applications using Electron.</p>
     </section>
-
-    <!-- Contact Section -->
     <section id="contact">
-        <article class="container">
-            <header>
-                <h2>Contact Me</h2>
-            </header>
-            <form id="contact-form">
-                <label for="name"><i class="fas fa-user"></i> Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email"><i class="fas fa-envelope"></i> Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message"><i class="fas fa-comment"></i> Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </article>
+      <h2>Contact</h2>
+      <form class="contact-form" action="mailto:rizwan.ah07@hotmail.com" method="post" enctype="text/plain">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your Name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="Your Email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </label>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <section class="container">
-            <p>© 2024 Rizwan Hussain. All rights reserved.</p>
-            <nav class="social-links">
-                <a href="https://github.com/Rizwan-ah07" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/rizwan-hussain-768973226/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                <!-- Add more social icons as needed -->
-            </nav>
-        </section>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <a href="#hero" class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
-
-    <!-- Custom JS -->
-    <script src="script.js" defer></script>
+  </main>
+  <footer>
+    <small>&copy; 2025 Rizwan Hussain. All rights reserved.</small>
+    <ul class="social-links">
+      <li><a href="https://github.com/your-github" target="_blank" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a></li>
+      <li><a href="https://linkedin.com/in/your-linkedin" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a></li>
+    </ul>
+  </footer>
 </body>
 </html>
